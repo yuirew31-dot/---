@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yuirew31-dot.github.io/тестовый-генератор/sitemap.xml
