@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Бесплатный онлайн сервис тестовый генератор. Мгновенные результаты с помощью ИИ, без регистрации и скачивания." name="description"/>
+<meta content="тестовый генератор, тестовый генератор онлайн, тестовый генератор бесплатно, тестовый генератор для бизнеса, тестовый генератор генератор, лучший тестовый генератор, тестовый генератор 2024, тестовый генератор отзывы, как сделать тестовый генератор, тестовый генератор сервис" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="Тестовый Генератор - Бесплатный Онлайн Сервис" property="og:title"/>
+<meta content="Попробуйте тестовый генератор бесплатно. Мгновенные результаты, без регистрации." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://yuirew31-dot.github.io/тестовый-генератор/" property="og:url"/>
+<title>Тестовый Генератор - Бесплатный Онлайн Сервис | Тестовый Генератор</title>
+<link href="https://yuirew31-dot.github.io/тестовый-генератор/" rel="canonical"/>
+<link href="style.css" rel="stylesheet"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Тестовый Генератор - Онлайн Сервис", "description": "Бесплатный онлайн сервис тестовый генератор. Мгновенные результаты, без регистрации.", "url": "https://yuirew31-dot.github.io/тестовый-генератор/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Что такое тестовый генератор?", "acceptedAnswer": {"@type": "Answer", "text": "Тестовый Генератор — это современный онлайн-сервис, который предоставляет широкий спектр функций для решения ваших задач."}}, {"@type": "Question", "name": "Это бесплатно?", "acceptedAnswer": {"@type": "Answer", "text": "Да! Основной функционал Тестовый Генератор доступен бесплатно. Премиум-функции доступны для продвинутых пользователей."}}, {"@type": "Question", "name": "Как начать использовать тестовый генератор?", "acceptedAnswer": {"@type": "Answer", "text": "Просто введите необходимые данные в форму и нажмите кнопку генерации. Результат будет готов через несколько секунд."}}, {"@type": "Question", "name": "Можно ли использовать результаты коммерчески?", "acceptedAnswer": {"@type": "Answer", "text": "Да, все сгенерированные результаты Тестовый Генератор можно использовать в коммерческих целях."}}, {"@type": "Question", "name": "Как быстро работает тестовый генератор?", "acceptedAnswer": {"@type": "Answer", "text": "Генерация занимает от 3 до 10 секунд в зависимости от сложности запроса."}}, {"@type": "Question", "name": "Нужны ли технические знания?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, интерфейс Тестовый Генератор прост и интуитивно понятен. Никаких технических знаний не требуется."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Тестовый Генератор - Бесплатный Онлайн Сервис | Тестовый Генератор", "url": "https://yuirew31-dot.github.io/"}</script></head>
+<body>
+<nav class="navbar">
+<div class="container">
+<a class="logo" href="/">Тестовый Генератор</a>
+<ul class="nav-links">
+<li><a href="#generator">Генератор</a></li>
+<li><a href="#styles">Стили</a></li>
+<li><a href="#features">Возможности</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a class="btn-nav" href="#generator">Try Free</a></li>
+</ul>
+<button class="mobile-menu" onclick="document.querySelector('.nav-links').classList.toggle('active')">☰</button>
+</div>
+</nav>
+<main>
+<section class="hero" id="hero">
+<div class="container">
+<h1>Тестовый Генератор</h1>
+<p class="hero-subtitle">Бесплатный онлайн сервис тестовый генератор. Мгновенные результаты с помощью ИИ, без регистрации и скачивания.</p>
+<a class="btn btn-primary btn-large" href="#generator">Try Free</a>
+</div>
+</section>
+<section class="section generator-section" id="generator">
+<div class="container">
+<h2>Генератор Тестовый Генератор</h2>
+<p>Введите данные и выберите стиль. ИИ создаст результат специально для вас.</p>
+<div class="generator-form">
+<input class="input-field" id="company-name" placeholder="Введите название или запрос" type="text"/>
+<select class="input-field select-field" id="logo-style">
+<option value="modern minimalist">Современный минималистичный</option>
+<option value="bold gradient">Яркий градиентный</option>
+<option value="vintage badge">Винтажный значок</option>
+<option value="neon glow">Неоновое свечение</option>
+<option value="nature organic">Природный органический</option>
+<option value="geometric abstract">Геометрический абстрактный</option>
+</select>
+<button class="btn btn-primary" id="generate-btn" onclick="generateLogo()">Сгенерировать</button>
+</div>
+<div class="logo-result" id="logo-result" style="display:none;">
+<div class="loading" id="loading" style="display:none;">
+<div class="spinner"></div>
+<p>ИИ генерирует результат...</p>
+</div>
+<div class="logo-preview" id="logo-preview" style="display:none;">
+<img alt="Сгенерированный результат" id="logo-image" src=""/>
+<div class="logo-brand" id="logo-brand"></div>
+</div>
+<div class="download-buttons" id="download-buttons" style="display:none;">
+<button class="btn btn-primary" onclick="downloadLogo()">Скачать PNG</button>
+<button class="btn btn-secondary" onclick="generateLogo()">Перегенерировать</button>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="styles">
+<div class="container">
+<h2>Стили Тестовый Генератор</h2>
+<p>Выберите один из профессиональных стилей для вашего результата</p>
+<div class="styles-grid">
+<div class="style-card" onclick="selectStyle('modern minimalist')">
+<div class="style-preview" style="background:linear-gradient(135deg,#667eea,#764ba2)"></div>
+<h3>Современный</h3>
+<p>Чистый, простой, элегантный</p>
+</div>
+<div class="style-card" onclick="selectStyle('bold gradient')">
+<div class="style-preview" style="background:linear-gradient(135deg,#f093fb,#f5576c)"></div>
+<h3>Яркий</h3>
+<p>Энергичный, современный</p>
+</div>
+<div class="style-card" onclick="selectStyle('vintage badge')">
+<div class="style-preview" style="background:linear-gradient(135deg,#c9a96e,#8b6914)"></div>
+<h3>Винтажный</h3>
+<p>Классический, надежный</p>
+</div>
+<div class="style-card" onclick="selectStyle('neon glow')">
+<div class="style-preview" style="background:linear-gradient(135deg,#0f0c29,#302b63)"></div>
+<h3>Неоновый</h3>
+<p>Футуристический, технологичный</p>
+</div>
+<div class="style-card" onclick="selectStyle('nature organic')">
+<div class="style-preview" style="background:linear-gradient(135deg,#11998e,#38ef7d)"></div>
+<h3>Природный</h3>
+<p>Эко, натуральный, свежий</p>
+</div>
+<div class="style-card" onclick="selectStyle('geometric abstract')">
+<div class="style-preview" style="background:linear-gradient(135deg,#4facfe,#00f2fe)"></div>
+<h3>Геометрический</h3>
+<p>Математический, современный</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="features">
+<div class="container">
+<h2>Почему Тестовый Генератор</h2>
+<div class="features-grid">
+<div class="feature-card">
+<div class="feature-icon">⚡</div>
+<h3>100% Free</h3>
+<p>Основной функционал Тестовый Генератор доступен бесплатно без ограничений</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">🔧</div>
+<h3>AI-Powered</h3>
+<p>Используем передовые технологии искусственного интеллекта для Тестовый Генератор</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">⏱</div>
+<h3>Instant Results</h3>
+<p>Получите результат Тестовый Генератор за считанные секунды, без ожидания</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">⭐</div>
+<h3>High Quality</h3>
+<p>Профессиональное качество результатов Тестовый Генератор для любых задач</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">📝</div>
+<h3>Unlimited Usage</h3>
+<p>Генерируйте сколько угодно результатов Тестовый Генератор без ограничений</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">🚀</div>
+<h3>Easy to Use</h3>
+<p>Простой и понятный интерфейс Тестовый Генератор для всех пользователей</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="about">
+<div class="container">
+<h2>Как это работает</h2>
+<div class="steps-grid">
+<div class="step">
+<div class="step-number">1</div>
+<h3>Введите данные</h3>
+<p>Введите название, описание или другой запрос в форму генератора.</p>
+</div>
+<div class="step">
+<div class="step-number">2</div>
+<h3>Выберите стиль</h3>
+<p>Выберите один из доступных стилей для вашего результата.</p>
+</div>
+<div class="step">
+<div class="step-number">3</div>
+<h3>ИИ генерирует результат</h3>
+<p>Наш ИИ анализирует ваш запрос и создает уникальный результат.</p>
+</div>
+<div class="step">
+<div class="step-number">4</div>
+<h3>Скачайте и используйте</h3>
+<p>Скачайте результат в высоком качестве для любых задач.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="faq">
+<div class="container">
+<h2>Часто задаваемые вопросы</h2>
+<div class="faq-list">
+<div class="faq-item">
+<button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                    Что такое тестовый генератор?
+                    <span class="faq-icon">+</span>
+</button>
+<div class="faq-answer"><p>Тестовый Генератор — это современный онлайн-сервис, который предоставляет широкий спектр функций для решения ваших задач.</p></div>
+</div>
+<div class="faq-item">
+<button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                    Это бесплатно?
+                    <span class="faq-icon">+</span>
+</button>
+<div class="faq-answer"><p>Да! Основной функционал Тестовый Генератор доступен бесплатно. Премиум-функции доступны для продвинутых пользователей.</p></div>
+</div>
+<div class="faq-item">
+<button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                    Как начать использовать тестовый генератор?
+                    <span class="faq-icon">+</span>
+</button>
+<div class="faq-answer"><p>Просто введите необходимые данные в форму и нажмите кнопку генерации. Результат будет готов через несколько секунд.</p></div>
+</div>
+<div class="faq-item">
+<button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                    Можно ли использовать результаты коммерчески?
+                    <span class="faq-icon">+</span>
+</button>
+<div class="faq-answer"><p>Да, все сгенерированные результаты Тестовый Генератор можно использовать в коммерческих целях.</p></div>
+</div>
+<div class="faq-item">
+<button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                    Как быстро работает тестовый генератор?
+                    <span class="faq-icon">+</span>
+</button>
+<div class="faq-answer"><p>Генерация занимает от 3 до 10 секунд в зависимости от сложности запроса.</p></div>
+</div>
+<div class="faq-item">
+<button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                    Нужны ли технические знания?
+                    <span class="faq-icon">+</span>
+</button>
+<div class="faq-answer"><p>Нет, интерфейс Тестовый Генератор прост и интуитивно понятен. Никаких технических знаний не требуется.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="section cta-section" id="cta">
+<div class="container">
+<h2>Попробуйте Тестовый Генератор сейчас</h2>
+<p>Присоединяйтесь к тысячам пользователей, которые уже воспользовались нашим сервисом.</p>
+<a class="btn btn-primary btn-large" href="#generator">Начать бесплатно</a>
+</div>
+</section>
+</main>
+<footer>
+<div class="container">
+<p>© 2024 Тестовый Генератор. Все права защищены.</p>
+</div>
+</footer>
+<script>
+    var LOGO_STYLES = [{"name": "Modern Minimalist", "prompt": "modern minimalist flat design, тестовый генератор, clean lines, professional, white background"}, {"name": "Gradient Bold", "prompt": "bold gradient design, тестовый генератор, vibrant colors, modern tech style, professional, white background"}, {"name": "Vintage Badge", "prompt": "vintage badge design, тестовый генератор, retro style, classic typography, professional, white background"}, {"name": "Neon Glow", "prompt": "neon glow design, тестовый генератор, dark background, glowing effects, futuristic, professional"}, {"name": "Nature Organic", "prompt": "organic nature design, тестовый генератор, earthy tones, eco-friendly style, professional, white background"}, {"name": "Geometric Abstract", "prompt": "geometric abstract design, тестовый генератор, mathematical shapes, modern art style, professional, white background"}];
+    </script>
+<script src="script.js"></script>
+</body>
+</html>
